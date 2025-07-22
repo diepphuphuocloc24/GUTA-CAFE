@@ -79,8 +79,18 @@ body {
 
 }
 
-/* CAROUSEL */
+.dropdown-menu:focus {
+    background-color: #ffcc4f;
 
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/* CAROUSEL */
+#GutaCarousel .carousel-indicators.active {
+    color: #0349b3 !important;
+}
 
 /* INTRO */
 .intro-content {
@@ -151,9 +161,10 @@ body {
 .intro-expand-text:hover {
     color: white;
     background-color: black;
-    transition-duration:300ms;
+    transition-duration: 300ms;
 }
 
+/* BIZCAFE */
 .BizCafe {
     color: #111827;
     font-size: 18px;
@@ -166,7 +177,14 @@ body {
     margin-left: 8px;
 }
 
-.hotnews {
+/* HOT DEALS */
+.hot-deal {
+    background-color: #f8f3ec;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.hot-deal-content:first-child {
     color: #111827;
     font-size: 1.5rem;
     font-weight: 700px;
@@ -176,7 +194,7 @@ body {
     padding-right: 1.25rem;
 }
 
-.location {
+.hot-deal-content .location {
     color: white;
     font-size: 1rem;
     line-height: 1.5rem;
@@ -192,24 +210,28 @@ body {
     background-color: #0349b3;
 }
 
-.menu2 {
-    display: inline-block;
+.hot-deal-item {
     background-color: white;
-    box-sizing: border-box;
-    border: 0 solid #e5e7eb;
-    border-radius: 0.75rem;
-    margin: 0.75rem;
+
+    border: 1px solid white;
+    border-radius: 10px;
 }
 
-.text-Hotnews {
+.hot-deal-item-text {
+    display: flex;
+}
+
+.hot-deal-item a {
+    text-decoration: none;
     color: black;
     font-weight: 700;
+
     margin-bottom: 0.75rem;
     margin-left: 0.75rem;
     margin-right: 0.75rem;
 }
 
-.xem {
+.hot-deal-item span {
     display: inline-block;
     background-color: #0349b3;
     color: white;
@@ -221,6 +243,15 @@ body {
     padding-bottom: 0.25rem;
     padding-left: 0.75rem;
     padding-right: 0.75rem;
+}
+
+.menu2 {
+    display: inline-block;
+    background-color: white;
+    box-sizing: border-box;
+    border: 0 solid #e5e7eb;
+    border-radius: 0.75rem;
+    margin: 0.75rem;
 }
 
 .menu3 {
@@ -289,5 +320,5 @@ body {
 .job-position:hover {
     color: white;
     background-color: black;
-    transition-duration:300ms;
+    transition-duration: 300ms;
 }
